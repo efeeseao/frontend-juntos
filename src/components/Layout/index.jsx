@@ -1,4 +1,4 @@
-import { Header } from 'components'
+import { Header, Footer } from 'components'
 import * as S from './layout.styles'
 
 const Layout = ({ children }) => {
@@ -6,6 +6,7 @@ const Layout = ({ children }) => {
     <S.LayoutWrapper>
       <Header />
       {children}
+      <Footer />
     </S.LayoutWrapper>
   )
 }
