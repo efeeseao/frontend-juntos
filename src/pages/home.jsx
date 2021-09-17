@@ -1,9 +1,9 @@
-import { Layout } from 'components'
+import { Layout, Hero } from 'components'
 
 const Home = () => {
   return (
     <Layout>
-      <h1>Header</h1>
+      <Hero />
     </Layout>
   )
 }
