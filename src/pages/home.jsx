@@ -1,9 +1,10 @@
-import { Layout, Hero } from 'components'
+import { Layout, Hero, Card } from 'components'
 
 const Home = () => {
   return (
     <Layout>
       <Hero />
+      <Card />
     </Layout>
   )
 }
