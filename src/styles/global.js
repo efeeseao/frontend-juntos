@@ -50,7 +50,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     position: relative;
     font-weight: 400;
-    background: ${theme.colors.background};
+    background: ${theme.colors.primary};
   }
 
   img {
