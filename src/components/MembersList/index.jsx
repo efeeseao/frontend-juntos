@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Pagination } from 'components'
 
 import { StateCheckboxList, Skeleton } from 'components'
 import * as S from './memberList.styles'
@@ -47,6 +48,7 @@ const UserContent = () => {
               </S.User>
             )}
           </S.UserList>
+          <Pagination />
         </S.Users>
       </S.UserContent>
     </S.UserWrapper>
