@@ -1,5 +1,11 @@
+import { Layout, MembersList } from 'components'
+
 const Users = () => {
-  return <h1>Hello Users</h1>
+  return (
+    <Layout>
+      <MembersList />
+    </Layout>
+  )
 }
 
 export default Users
