@@ -1,10 +1,15 @@
+import { SearchMemberProvider, CheckedStatesProvider } from 'context'
 import { Layout, MembersList } from 'components'
 
 const Users = () => {
   return (
-    <Layout>
-      <MembersList />
-    </Layout>
+    <SearchMemberProvider>
+      <Layout>
+        <CheckedStatesProvider>
+          <MembersList />
+        </CheckedStatesProvider>
+      </Layout>
+    </SearchMemberProvider>
   )
 }
 
