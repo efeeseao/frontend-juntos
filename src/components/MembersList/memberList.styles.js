@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const UserWrapper = styled.main`
@@ -6,24 +7,6 @@ export const UserWrapper = styled.main`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-`
-export const UserHeader = styled.header`
-  display: flex;
-  flex-direction: column;
-  margin-top: 24px;
-  max-width: 1136px;
-  width: 100%;
-
-  .header {
-    font-size: 14px;
-  }
-
-  .title h1 {
-    color: hsl(0deg 0% 0%);
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 24px 0 40px 0;
-  }
 `
 export const UserContent = styled.section`
   display: flex;
@@ -54,20 +37,6 @@ export const UsersHeader = styled.header`
     font-size: 1.5rem;
     font-weight: 400;
   }
-
-  .option strong {
-    font-size: 1.2rem;
-    margin-right: 8px;
-    color: #222d39;
-  }
-
-  select {
-    border: none;
-    font-size: 1.2rem;
-    font-weight: 400;
-    width: 68px;
-    background: white;
-  }
 `
 export const UserList = styled.section`
   display: grid;
@@ -80,7 +49,7 @@ export const UserList = styled.section`
   height: 100%;
   width: 100%;
 `
-export const User = styled.div`
+export const User = styled(Link)`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -100,12 +69,14 @@ export const User = styled.div`
     font-size: 20px;
     font-weight: 700;
     margin-top: 12px;
+    text-transform: capitalize;
   }
 
   .address,
   .postcode,
   .city {
     font-weight: 400;
+    text-transform: capitalize;
   }
 
   .address {
