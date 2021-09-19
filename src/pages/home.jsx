@@ -1,11 +1,12 @@
-import { Layout, Hero, Card } from 'components'
+import { Footer, Hero, Card } from 'components'
 
 const Home = () => {
   return (
-    <Layout>
+    <>
       <Hero />
       <Card />
-    </Layout>
+      <Footer />
+    </>
   )
 }
 
