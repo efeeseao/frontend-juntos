@@ -70,7 +70,10 @@ const MembersContent = () => {
             <S.UserList>
               {stateSortedMembers.map(({ picture, name, location }) => {
                 return (
-                  <S.User key={location.postcode} to="/profile">
+                  <S.User
+                    key={location.postcode}
+                    to={`/members/${location.postcode}`}
+                  >
                     <img src={picture.large} alt={name.first} />
                     <h2 className="user-name">
                       {name.first} {name.last}
@@ -113,7 +116,10 @@ const MembersContent = () => {
             {filteredMembers.length !== 0
               ? filteredMembers.map(({ picture, name, location }) => {
                   return (
-                    <S.User key={location.postcode} to="/profile">
+                    <S.User
+                      key={location.postcode}
+                      to={`/members/${location.postcode}`}
+                    >
                       <img src={picture.large} alt={name.first} />
                       <h2 className="user-name">
                         {name.first} {name.last}
@@ -128,7 +134,10 @@ const MembersContent = () => {
                 })
               : currentMembers.map(({ picture, name, location }) => {
                   return (
-                    <S.User key={location.postcode} to="/profile">
+                    <S.User
+                      key={location.postcode}
+                      to={`/members/${location.postcode}`}
+                    >
                       <img src={picture.large} alt={name.first} />
                       <h2 className="user-name">
                         {name.first} {name.last}

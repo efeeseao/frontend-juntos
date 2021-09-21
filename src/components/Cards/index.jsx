@@ -1,8 +1,6 @@
 import CardData from 'resources/cardData'
 import * as S from './cards.styles'
 
-import CardImg from 'images/card-group.png'
-
 const SectionMembers = () => {
   return (
     <S.SectionWrapper>
@@ -22,7 +20,10 @@ const SectionMembers = () => {
             </S.Cards>
           </S.TextWrapper>
           <S.ImageWrapper>
-            <img src={CardImg} alt="Card" />
+            <img
+              src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80"
+              alt="JuntosSomosMaisFortes"
+            />
           </S.ImageWrapper>
         </S.ContentGroup>
       </S.SectionContainer>
