@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 
 import range from 'components/Shared/rage'
-import leftArrow from 'images/left-path.png'
-import rightArrow from 'images/right-path.png'
 import * as S from './pagination.styles'
 
 const LEFT_PAGE = 'LEFT'
@@ -112,7 +110,10 @@ const Pagination = (props) => {
         disabled={isCurrentPage === 1}
         onClick={(event) => handleClick(isCurrentPage - 1, event)}
       >
-        <img src={leftArrow} alt="button-icon" />
+        <img
+          src="https://raw.githubusercontent.com/buzzcode42/juntos-images/main/left-path.png?token=AJQRGDPIWQQS6S2YNHZXQA3BJGTAK"
+          alt="button-icon"
+        />
       </button>
       <ul className="pagination">
         {pages.map((page, index) => {
@@ -156,7 +157,10 @@ const Pagination = (props) => {
         disabled={isCurrentPage === 23}
         onClick={(event) => handleClick(isCurrentPage + 1, event)}
       >
-        <img src={rightArrow} alt="button-icon" />
+        <img
+          src="https://raw.githubusercontent.com/buzzcode42/juntos-images/main/right-path.png?token=AJQRGDOPXX7EXUPVOI2QWWLBJGTAE"
+          alt="button-icon"
+        />
       </button>
     </S.PaginationWrapper>
   )

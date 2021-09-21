@@ -2,8 +2,6 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 import { SearchMemberContext } from 'context/searchMemberContext'
-import logo from 'images/header-logo.png'
-import searchIcon from 'images/search.png'
 
 import NavbarData from 'resources/navbarData'
 
@@ -22,7 +20,7 @@ const Header = () => {
             <img
               className="logo"
               role="img"
-              src={logo}
+              src="https://raw.githubusercontent.com/buzzcode42/juntos-images/main/header-logo.png?token=AJQRGDJX65MRPKG6QXPDTQ3BJGS4G"
               alt="JuntosSomosMaisLogo"
             />
           </Link>
@@ -31,7 +29,7 @@ const Header = () => {
           <img
             className="search-field"
             role="img"
-            src={searchIcon}
+            src="https://raw.githubusercontent.com/buzzcode42/juntos-images/main/search.png?token=AJQRGDMOW4KF4EUGN35BYMLBJGS6O"
             alt="Search Icon"
           />
           <input

@@ -1,16 +1,21 @@
 import SocialData from 'resources/socialMedia'
 
-import footer from 'images/footer.png'
-import logo from 'images/footer-logo.png'
-
 import * as S from './footer.styles'
 
 const Footer = () => {
   return (
     <S.FooterWrapper>
       <S.LogoWrapper>
-        <img className="footer" src={footer} alt="footer-logo" />
-        <img className="footer-logo" src={logo} alt="footer-logo" />
+        <img
+          className="footer"
+          src="https://raw.githubusercontent.com/buzzcode42/juntos-images/main/footer.png?token=AJQRGDMJ5SBNEOZTCQQ56C3BJGS2G"
+          alt="footer-logo"
+        />
+        <img
+          className="footer-logo"
+          src="https://raw.githubusercontent.com/buzzcode42/juntos-images/main/footer-logo.png?token=AJQRGDJE3DAT44FOM6JKQUTBJGSS4"
+          alt="footer-logo"
+        />
       </S.LogoWrapper>
       <S.TextSlogan>
         <p>Juntos Somos Mais Fidelização S.A</p>
